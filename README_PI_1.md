@@ -8,6 +8,18 @@
 ## Diagrama de flujo de trabajo
 ![image](https://raw.githubusercontent.com/CesarG2022/Prep-Course/main/_src/PI_1.jpg)
 
+## Archivos
+- PI_1_carga_inicial.ipynb : codigo para la carga inicial de datos a la base de datos pi_1.
+- carga_incremental.ipynb: codigo para la anexión de los datos de la tabla precios_semana_20200518.txt a la base de datos pi_1.
+- PI_1.drawio: diagrama de flujo de trabajo(pipeline)
+- construccion_DER.sql: archivo para la asignacion de claves primarias y foraneas.
+- en la carpeta Datasets se encuentran los archivos con los datos provenientes de la empresa, en total son 6 archivos que se distribuyen asi:
+    -precios_semana_20200413.csv, precios_semana_20200503.json, precios_semanas_20200419_20200426.xlsx: estos son utilizados para la carga inicial  
+    -precios_semana_20200518.txt : se usan para la carga incremental.
+    -sucursal.csv: para contruir tabla dimensional con datos de sucursales.
+    -producto.parquet: para contruir tabla dimensional con datos de productos.
+
+
 ## Pasos en python para carga inicial
 
 - Cargar dataset: en este punto se cargan dos tablas dimensionales(sucursal y producto) y tres tablas de precios(precio_1, precio_2, precio_3) utilizando la libreria pandas.
