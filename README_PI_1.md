@@ -18,6 +18,7 @@
     -precios_semana_20200518.txt : se usan para la carga incremental.
     -sucursal.csv: para contruir tabla dimensional con datos de sucursales.
     -producto.parquet: para contruir tabla dimensional con datos de productos.
+- carpeta DB : se encuentran los archivos de la base de datos exportados.
 
 
 ## Pasos en python para carga inicial
@@ -79,5 +80,5 @@ también se crean en la tabla precios las claves foraneas para relacionarla con 
 
 - Carga incremental: aquí es donde está la diferencia entre la carga inicial y la carga incremental, debido a que en este caso se quiere adicionar los datos nuevos a los ya existentes, al momento de usar la funcion .to_sql() de sqlalchemy, se debe adicionar el parametro if_exist='append', de esta manera los nuevos datos se agregan al final de la tabla precios del db.
 
-## link al video explicativo:
+## link al video explicativo: https://youtu.be/55ieB14AgkM
 
