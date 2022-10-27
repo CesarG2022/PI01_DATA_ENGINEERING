@@ -6,7 +6,7 @@
 - Realizar una carga incremental de los archivos
 
 ## Diagrama de flujo de trabajo
-![image](https://raw.githubusercontent.com/CesarG2022/Prep-Course/main/_src/PI_1.jpg)
+![image](https://raw.githubusercontent.com/CesarG2022/PI01_DATA_ENGINEERING/main/PI_1.jpg)
 
 ## Archivos
 - PI_1_carga_inicial.ipynb : codigo para la carga inicial de datos a la base de datos pi_1.
@@ -68,7 +68,8 @@
     precios: id_precio ; esta clave es autoincremental para que se aumente automáticamente al hacer la carga incremental
 también se crean en la tabla precios las claves foraneas para relacionarla con la tabla productos a través de la columna id_producto y con la tabla sucursales a través de la columna de id_sucursal.
 
-- Creación del diagrama usando la herramienta reverse engineering
+- Creación del siguiente diagrama usando la herramienta reverse engineering
+![image](https://raw.githubusercontent.com/CesarG2022/PI01_DATA_ENGINEERING/main/DER.png)
 
 ## Pasos en python para carga incremental
 
